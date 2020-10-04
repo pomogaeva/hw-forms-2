@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="panel">
+      <div class="tabs-nav">
+        <ul class="nav">
+          <li class="nav-item">
+            <a href="#sign" class="nav-link">Sign in</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#join" class="nav-link">Join us</a>
+          </li>
+        </ul>
+
+        <div class="tabs-container">
+          <div class="tabs-content" id="sign">
+            <form action="#" method="get">
+              <div class="form">
+                <div class="form-controls">
+                  <label class="form-label" for="Username">Username</label>
+                  <input class="form-input" minlength="3" type="text" name="Username" id="Username">
+                  <div class="form-error">error</div>
+                </div>
+
+                <div class="form-controls">
+                  <label class="form-label" for="Password">Password</label>
+                  <input class="form-input" required type="password" name="Password" id="Password">
+                  <div class="form-error">error</div>
+                </div>
+
+                <div class="form-controls">
+                  <input class="checkbox" checked type="checkbox" name="keep" id="keep">
+                  <label class="form-label checkbox" for="keep">
+                    <span class="form-checkbox">&#10004;</span>
+                    Keep me signed in
+                  </label>
+                </div>
+
+                <div class="form-controls submit">
+                  <button type="submit" class="form-btn">Sign in</button>
+                </div>
+
+                <div class="form-bottom-actions">
+                  <a href="#" class="form-link">Forgot password</a>
+                  <a href="#join" class="form-link">Create an account</a>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="tabs-content" id="join">
+            <form action="#" method="get">
+              <div class="form">
+                <div class="form-controls">
+                  <label class="form-label" for="Username">Username</label>
+                  <input class="form-input" minlength="3" type="text" name="Username" id="Username">
+                  <div class="form-error">error</div>
+                </div>
+
+                <div class="form-controls">
+                  <label class="form-label" for="Password">Password</label>
+                  <input class="form-input" required type="password" name="Password" id="Password">
+                  <div class="form-error">error</div>
+                </div>
+
+                <div class="form-controls">
+                  <label class="form-label" for="repeat_password">Repeat password</label>
+                  <input class="form-input" required type="repeat_password" name="repeat_pass" id="repeat_password">
+                  <div class="form-error">error</div>
+                </div>
+
+                <div class="form-controls submit">
+                  <button type="submit" class="form-btn">Join</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
