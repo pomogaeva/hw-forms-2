@@ -96,6 +96,11 @@ body {
   padding-top: 54px;
 }
 
+.tabs-content {
+  width: 260px;
+  height: 330px;
+}
+
 .tabs-content:not(:target) {
   display: none;
 }
